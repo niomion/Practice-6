@@ -11,7 +11,53 @@
     <div class="loading6"></div>
     <div class="loading66"></div>
     <button onclick="Change('index.html')">> Menu</button>
-    <h1>Test1</h1>
+    <h1>Select calculator</h1>
+    <button onclick="ShowCalc(1)">> Calculator 1</button>
+    <button onclick="ShowCalc(2)">> Calculator 2</button>
+    <div class="calculator1">
+       <div>
+        <input id="sfirst" type="text">
+        <input id="ssecond" type="text">        
+    </div>
+    <div>
+    <input id="sresult" readonly type="text">
+    </div>
+        <button onclick="calcul()"> Calculate </button>
+    </div>
+
+    <div class="flex-container" id="v3">
+        <div>
+                <input type="text" readonly name="calculate" id="calculate"><br>
+                <button type="button" class="button2" onclick='funcTest()'> Calculate</button>
+                <div class="flex-box">
+                    <div>
+                    <button onclick='onClick1("+")'>+</button>
+                    <button value="1" id="b1" onclick='onClick1(1)'>1</button>
+                    <button value="4" id="b4" onclick='onClick1(4)'>4</button>
+                    <button value="7" id="b7" onclick='onClick1(7)'>7</button>
+                </div>
+                <div>
+                    <button onclick='onClick1("-")'>-</button>
+                    <button value="2" id="b2" onclick='onClick1(2)'>2</button>
+                    <button value="5" id="b5" onclick='onClick1(5)'>5</button>
+                    <button value="8" id="b8" onclick='onClick1(8)'>8</button>
+                </div>
+                <div>
+                    <button onclick='onClick1("*")'>*</button>
+                    <button value="3" id="b3" onclick='onClick1(3)'>3</button>
+                    <button value="6" id="b6" onclick='onClick1(6)'>6</button>
+                    <button value="9" id="b9" onclick='onClick1(9)'>9</button>
+                </div>
+                <div>
+                    <button onclick='onClick1("/")'>/</button>
+                    <button value="6" id="b6" onclick='ClearLast()'>C</button>
+                    <button value="9" id="b9" onclick='ClearAll()'>AC</button>
+                    <button value="9" id="b9" onclick='onClick1(0)'>0</button>
+                </div>
+                </div>
+        </div>
+    </div>
+    <script src="js/calc2.js"></script>
     <script src="js/task5.js"></script>
 </body>
 </html>

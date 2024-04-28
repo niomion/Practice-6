@@ -11,7 +11,19 @@
     <div class="loading7"></div>
     <div class="loading77"></div>
     <button onclick="Change('index.html')">> Menu</button>
-    <h1>Test2</h1>
+    <h1>Email</h1>
+    <form action="mailto:example@example.com" method="post" enctype="text/plain">
+        <div class="emal"> <label for="Email">Your email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="emal"> <label for="Subject">Your subject</label>
+            <input type="text" id="subject" name="subject">
+        </div>
+        <div class="emal"> <label for="Message">Your message</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+        <div class="emal"> <button type="submit">Send</button> </div>
+    </form>
     <script src="js/task6.js"></script>
 </body>
 </html>

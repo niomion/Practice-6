@@ -16,6 +16,38 @@
     opacity: 1;
 }
 
+form {
+    border: 3px solid black;
+    background-color: chartreuse;
+    width: 25%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.emal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    border: 3px solid black;
+}
+
+.emal input {
+    text-align: left;
+    width: 61%;
+}
+
+#message {
+    text-align: left;
+}
+
+.emal button {
+    width:100%
+}
+
 .loading77 {
     position: absolute;
     top: 0;

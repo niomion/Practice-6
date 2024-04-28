@@ -10,9 +10,39 @@
 <body class="gradient-animation">
     <div class="loading5"></div>
     <div class="loading55"></div>
-    <button onclick="Change('index.html')">> Menu</button>
-    <button onclick="computeFunction()">> Compute</button>
-    <h1>There will be a conditions</h1>
+    <button id="menub" onclick="Change('index.html')">> Menu</button>
+    <div class="mainMenu"> <h1>Welcome to Task 4! <br> Please, login or sign up.</h1>
+    <button onclick="showLogin()">> Login</button>
+    <button onclick="showRegister()">> Register</button>
+    </div> 
+    <div class="login">
+        <button onclick="showMenu()">> Back</button>
+       <form id="login">
+        <div class="reg">
+        <input type="text" name="userLogin" id="checkLogin" placeholder="Login">
+        <input type="password" name="userPassword" id="checkPassword" placeholder="Password">
+       </div>
+        <div>
+        <input class="butt" type="submit" value="> Sign-in">
+        </div>
+       </form>
+       <h1 id="wrong">Wrong login or password!</h1>
+    </div>
+    <div class="register">
+        <button onclick="showMenu()">> Back</button>
+        <form id="register">
+         <div class="reg">
+            <input type="text" name="userName" id="userUsername" placeholder="Name">
+            <input type="text" name="userLogin" id="userLoLogin" placeholder="Login">
+            <input type="password" name="userPassword" id="userPaPassword" placeholder="Password">
+         </div>
+            <div>
+            <input class="butt" type="submit" value="> Sign-up">
+         </div>
+        </form>
+        <h1 id="end">Thanks for registration!</h1>
+    </div>
     <script src="js/task4.js"></script>
+    <script src="js/user.js"></script>
 </body>
 </html>
