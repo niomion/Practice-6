@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/task3.css">
+    <title>Practice 5 - Task 1</title>
+</head>
+<body class="gradient-animation">
+    <div class="loading4"></div>
+    <div class="loading44"></div>
+    <button onclick="Change('index.html')">> Menu <br></button>
+    <h1>What color is the sky?</h1>
+    <audio id="wrong"> <source src="mus_wawa.ogg" type="audio/mpeg"> </audio>
+    <audio id="check"> <source src="snd_drumroll.wav" type="audio/mpeg"> </audio>
+    <audio id="victory"> <source src="snd_dumbvictory.wav" type="audio/mpeg"> </audio>
+    <form>
+        <div class="flexquestion">
+    <div class="flexanswer">
+        <input type="button" onclick="checkAnswer(1)" value="RED">
+        <input type="button" onclick="checkAnswer(2)" value="GREEN">
+        <input type="button" onclick="checkAnswer(3)" value="BLUE">
+    </div>
+        </div>
+        <h1 class="check"> Checking...</h1>
+    </form>
+    <script src="js/task3.js"></script>
+</body>
+</html>

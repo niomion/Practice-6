@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/task2.css">
+    <title>Practice 5 - Task 1</title>
+</head>
+<body class="gradient-animation">
+    <div class="loading3"></div>
+    <div class="loading33"></div>
+    <button class="menu" onclick="Change('index.html')">> Menu</button>
+    <h1>NOR</h1>
+
+    <form>
+        <div class="flexquestion">
+            <div class="flexlabel">
+        <label>A</label>
+    </div>
+    <div class="flexlabel">
+        <label>B</label>
+    </div>
+    <div style="border: 3px solid chartreuse;" class="flexanswer">
+        <label>Options</label>
+    </div>
+        </div>
+
+    <form>
+        <div class="flexquestion">
+            <div class="flexlabel">
+        <label>0</label>
+    </div>
+    <div class="flexlabel">
+        <label>0</label>
+    </div>
+    <div class="flexanswer">
+        <input type="button" onclick="checkTruth(0,0,true)" value="TRUE">
+        <input type="button" onclick="checkTruth(0,0,false)" value="FALSE">
+    </div>
+        </div>
+
+        <div class="flexquestion">
+            <div class="flexlabel">
+        <label>0</label>
+    </div>
+    <div class="flexlabel">
+        <label>1</label>
+    </div>
+    <div class="flexanswer">
+        <input type="button" onclick="checkTruth(0,1,true)" value="TRUE">
+        <input type="button" onclick="checkTruth(0,1,false)" value="FALSE">
+    </div>
+        </div>
+
+        <div class="flexquestion">
+            <div class="flexlabel">
+        <label>1</label>
+    </div>
+    <div class="flexlabel">
+        <label>0</label>
+    </div>
+    <div class="flexanswer">
+        <input type="button" onclick="checkTruth(1,0,true)" value="TRUE">
+        <input type="button" onclick="checkTruth(1,0,false)" value="FALSE">
+    </div>
+        </div>
+
+        <div class="flexquestion">
+            <div class="flexlabel">
+        <label>1</label>
+    </div>
+    <div class="flexlabel">
+        <label>1</label>
+    </div>
+    <div class="flexanswer">
+        <input type="button" onclick="checkTruth(1,1,true)" value="TRUE">
+        <input type="button" onclick="checkTruth(1,1,false)" value="FALSE">
+    </div>
+        </div>
+    </form>
+    <script src="js/task2.js"></script>
+</body>
+</html>

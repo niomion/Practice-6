@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Classic Console Neue';
+    text-align: center;
+    margin: 0;
+}
+
+.loading3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 10;
+    opacity: 1;
+}
+
+.flexquestion {
+    width: 25%;
+    border: 3px solid chartreuse;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flexlabel {
+    width: 25%;
+    border: 3px solid chartreuse;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.flexanswer {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexanswer input {
+    width: 50%;
+    background-color: chartreuse;
+    border: 3px solid chartreuse;
+    margin: 3%;
+}
+
+input:hover {
+    color: white;
+}
+
+input:active {
+    color: black;
+}
+
+.loading33 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 10;
+    display: none;
+    opacity: 1;
+}
+
+label {
+    font-size: 30px;
+    color: chartreuse;
+    text-align: left;
+    margin-left: 1%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 75px;
+    color:chartreuse;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+}
+
+li {
+    padding: 3%;
+    margin: auto;
+}
+
+h1:hover {
+    color: rgb(255, 255, 255);
+}
+
+.menu {
+    background-color: chartreuse;
+    color: black;
+    padding: 0.5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 50px;
+    border: 3px solid black;
+}
+
+button:hover {
+    color: white;
+}
+
+button:active {
+    color: black;
+}
+
+@font-face {
+    font-family: 'Classic Console Neue';
+    src: url('../ClassicConsoleNeue.woff2') format('woff2'),
+        url('../ClassicConsoleNeue.woff') format('woff'),
+        url('../ClassicConsoleNeue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @keyframes moveGradient {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+}
+
+.gradient-animation {
+    background: conic-gradient(from 90deg at 3px 3px, #0000 90deg, rgb(0, 0, 0) 0) 0 0/50px 50px;
+    animation: moveGradient 10s linear infinite;
+    background-color: #222222;
+}
