@@ -15,3 +15,13 @@ function Change(page) {
     }, 200);
 };
 
+function checkForm() {
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+    if (email === "" || subject === "" || message === "") {
+        alert("Please provide info!");
+        return false; 
+    }
+    return true;
+}
